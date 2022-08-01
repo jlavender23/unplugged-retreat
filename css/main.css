@@ -151,6 +151,21 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons {
@@ -166,6 +181,9 @@ footer .social-icons p {
 }
 
 footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px 0;
 }
 
@@ -187,7 +205,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 /*-------Features-------*/
@@ -509,6 +527,55 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles go here */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+/* Hero */
+.hero-area h1 {
+   width: 60%;
+}
+
+/* Aside */
+aside .content-wrapper {
+   justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+   width: 33%;
+}
+
+/* Features */
+.features h2 {
+   width: 90%;
+}
+
+.features article {
+   flex-basis: 33%;
+}
+
+/* Reviews */ 
+.reviews article div {
+   width: 42%;
+}
+
+/* ==========================================================================
+About Page
+========================================================================== */
+.mission h2,
+.contact-section .content-wrapper h2 {
+   width: 95%;
+}
+
+/* ==========================================================================
+FAQ Page
+========================================================================== */
+.faq h2 {
+   width: 100%;
+}
+
 }
 
 /* ==========================================================================
