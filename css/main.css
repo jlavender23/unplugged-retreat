@@ -391,6 +391,22 @@ input[type=button] {
   background-color: #527158;
 }
 
+.map figure {
+  position: relative;
+  padding: 125%;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 .contact-section {
   display: flex;
